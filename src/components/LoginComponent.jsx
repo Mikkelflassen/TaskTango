@@ -1,5 +1,7 @@
 import React from 'react'
 import { LoginAPI } from '../api/AuthAPI';
+import '../Sass/LoginComponent.scss';
+
 
 export default function LoginComponent() {
 return (
