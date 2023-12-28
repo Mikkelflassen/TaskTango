@@ -4,9 +4,12 @@ import "../Sass/LoginComponent.scss";
 
 
 export default function LoginComponent() {
+    const login = () =>{
+        LoginAPI();
+    };
     return ( <div>
         <h1>LoginComponent</h1>
-        <button className="login-btn"> Log in to TaskTango</button>
+        <button onClick= {login} className="login-btn"> Log in to TaskTango</button>
     </div>
  )
 }
