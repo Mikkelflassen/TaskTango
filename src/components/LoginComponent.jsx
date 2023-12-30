@@ -10,7 +10,8 @@ export default function LoginComponent() {
     };
     return ( 
     <div>
-        <h1>LoginComponent</h1>
+        <h1>Task Tango</h1>
+        <h3>For everone that do not have a use for linkedIn</h3>
         <button onClick={login} className="login-btn"> 
          Log in to TaskTango
         </button>
