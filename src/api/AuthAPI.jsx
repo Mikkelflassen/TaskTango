@@ -1,1 +1,3 @@
-export const LoginAPI =(email, password) => {}
+export const LoginAPI = () => {
+    return "Hello from Login APIs";
+};

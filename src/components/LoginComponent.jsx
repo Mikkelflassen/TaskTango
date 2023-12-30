@@ -5,7 +5,8 @@ import "../Sass/LoginComponent.scss";
 
 export default function LoginComponent() {
     const login = () => {
-        LoginAPI();
+        let res = LoginAPI();
+        console.log(res)
     };
     return ( 
     <div>
