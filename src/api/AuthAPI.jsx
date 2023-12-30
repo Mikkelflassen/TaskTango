@@ -1,6 +1,7 @@
-import {signInWithEmailAndPassword, getAuth} from 'firebase/auth'
+import {signInWithEmailAndPassword,} from 'firebase/auth'
+import {auth}from "../firebaseConfig.js"
 
-let auth = getAuth
+
 export const LoginAPI = (email, password) => {
     signInWithEmailAndPassword(auth, email, password);
 };
