@@ -12,6 +12,7 @@ export default function LoginComponent() {
     <div>
         <h1>Task Tango</h1>
         <h3>For everone that do not have a use for linkedIn</h3>
+        <input className ='commen-input' placeholder='enter your email'/> <br />
         <button onClick={login} className="login-btn"> 
          Log in to TaskTango
         </button>
