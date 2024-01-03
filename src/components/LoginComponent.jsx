@@ -1,18 +1,37 @@
-import React from 'react'
-import { LoginAPI } from "../api/AuthAPI";
+import React,{ useState } from 'react'
+import { RegisterAPI } from "../api/AuthAPI";
 import "../Sass/LoginComponent.scss";
 
 
 export default function LoginComponent() {
+    const [credentials, setCredentials] =useState({});
     const login = () => {
-        let res = LoginAPI();
-        console.log(res)
+        try{
+            let res =  RegisterAPI(credentials.email, credentials.password)
+        } catch(err){}
+
     };
+
     return ( 
-    <div>
+    <div className = "login-wrapper">
         <h1>Task Tango</h1>
         <h3>For everone that do not have a use for linkedIn</h3>
-        <input className ='commen-input' placeholder='enter your email'/> <br></br>
+        <div className ="auth.inputs">     
+            <input 
+                onChange ={(event) =>
+                setcredentials({...credentials,email: event.target.value})
+                }
+                className ='commen-input' 
+                placeholder='enter your email'
+            /> 
+            <input 
+                onChange={(event)=>
+                setCredentials({...credentials,password: event.target.value})
+                }  
+                className ='commen-input' 
+                placeholder='enter your password'
+            /> 
+        </div>  
         <button onClick={login} className="login-btn"> 
          Log in to TaskTango
         </button>
