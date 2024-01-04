@@ -16,10 +16,10 @@ export default function LoginComponent() {
     <div className = "login-wrapper">
         <h1>Task Tango</h1>
         <h3>For everone that do not have a use for linkedIn</h3>
-        <div className ="auth.inputs">     
+        <div className ="auth-inputs">     
             <input 
                 onChange ={(event) =>
-                setcredentials({...credentials,email: event.target.value})
+                setCredentials({...credentials,email: event.target.value})
                 }
                 className ='commen-input' 
                 placeholder='enter your email'
