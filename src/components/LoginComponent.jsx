@@ -19,7 +19,7 @@ export default function LoginComponent() {
     <div className = "login-wrapper">
         <img src={TaskTango} className='TaskTango'/>
         
-        <h1 className="heading"> Signin</h1>
+        <h1 className="heading"> Sign in</h1>
         <p className="sub-heading">Stay updated on your professional world</p>
         <div className ="auth-inputs">     
             <input 
@@ -36,11 +36,11 @@ export default function LoginComponent() {
                 className ='commen-input' 
                 placeholder='Password'
             /> 
-             <p className ="forgotPassword"> Forgot Password?</p>
+             <p className ="forgot-password"> Forgot Password?</p>
         </div>  
         
         <button onClick={login} className="login-btn"> 
-         Log in to TaskTango
+         Sign in
         </button>
     </div>
  )

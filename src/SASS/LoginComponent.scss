@@ -1,8 +1,17 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: aliceblue;
     
 }
+
+.TaskTango{
+    width:170px;
+    position: absolute;
+    top: 120px;
+    left:20px;
+    }
+    
 
 .login-wrapper{
 background-color: white;
@@ -23,12 +32,7 @@ background-color: white;
 }
 
 
-.login-btn{
-    width : 150px;
-    height: 30px;
-    cursor: pointer;
-    background-color: #f48585;
-}
+
 
 .auth-inputs{
 display: flex;
@@ -36,21 +40,65 @@ flex-direction: column;
 gap: 10px;
 width: 290px;
 margin-left:200px;
-.common-input{
+.commen-input{
     height: 20px;
     padding: 10px;
+    
 }
 ::placeholder{
-    color: #212121;
+    color: #ffffff;
 }
+
+}
+.forgot-password {
+    color:rgba(22, 39, 224, 0.708)
 }
 
 
 
-.TaskTango{
-width:170px;
-position: absolute;
-top:20px;
-left:20px;
+
+
+
+
+.login-btn{
+    
+    background-color: #379144; 
+    color: #ffffff;
+    border: solid 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    position: relative;
+    width: 290px;
+    overflow: hidden;
+    transition: color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    margin-left:200px;
 }
+  
+    /* Text styles */
+    span {
+    position: relative;
+    z-index: 1;
+    }
+  
+     /* Line effect */
+    .login-btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0; /* position of the line*/
+    left: 50%; /* which direction */
+    width: 0; /* where the line starts */
+    height: 2px; /* size of */
+    background-color: #ffffff; /* color of the line*/
+    transition: width 0.5s, left 0.5s; /* time for the line to travel*/
+    }
+  
+   
+  
+    .login-btn:hover::before {
+    width: 100%; /* Extend line width on hover */
+    left: 0; /* Align line from the left */
+    }
+
 
