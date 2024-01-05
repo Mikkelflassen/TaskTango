@@ -1,15 +1,17 @@
 import React,{ useState } from 'react'
-import { RegisterAPI } from "../api/AuthAPI";
+import { LoginAPI } from "../api/AuthAPI";
 import "../Sass/LoginComponent.scss";
 
 
 export default function LoginComponent() {
     const [credentials, setCredentials] =useState({});
-    const login = () => {
+    const login = async () => {
         try{
-            let res =  RegisterAPI(credentials.email, credentials.password)
-        } catch(err){}
-
+            let res =  await LoginAPI(credentials.email, credentials.password)
+            console.log(res?.user);
+        } catch(err){
+        console.log(err);
+        }
     };
 
     return ( 
