@@ -1,5 +1,6 @@
 import React,{ useState } from 'react'
 import { LoginAPI } from "../api/AuthAPI";
+import TaskTango from '../assets/TaskTango.png';
 import "../Sass/LoginComponent.scss";
 
 
@@ -16,24 +17,28 @@ export default function LoginComponent() {
 
     return ( 
     <div className = "login-wrapper">
-        <h1>Task Tango</h1>
-        <h3>For everone that do not have a use for linkedIn</h3>
+        <img src={TaskTango} className='TaskTango'/>
+        
+        <h1 className="heading"> Signin</h1>
+        <p className="sub-heading">Stay updated on your professional world</p>
         <div className ="auth-inputs">     
             <input 
                 onChange ={(event) =>
                 setCredentials({...credentials,email: event.target.value})
                 }
                 className ='commen-input' 
-                placeholder='enter your email'
+                placeholder='Email or phone'
             /> 
             <input 
                 onChange={(event)=>
                 setCredentials({...credentials,password: event.target.value})
                 }  
                 className ='commen-input' 
-                placeholder='enter your password'
+                placeholder='Password'
             /> 
+             <p className ="forgotPassword"> Forgot Password?</p>
         </div>  
+        
         <button onClick={login} className="login-btn"> 
          Log in to TaskTango
         </button>

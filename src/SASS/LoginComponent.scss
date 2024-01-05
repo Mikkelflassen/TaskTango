@@ -1,6 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.login-wrapper{
+background-color: white;
+    .heading {
+        margin-left: 200Px;
+        margin-top: 100px;
+        font-family: system-uI;
+        font-weight: 500;
+        color: #212121;
+    }
+
+    .sub-heading{
+        margin-left:200px;
+        margin-top: -20px;
+        font-family: system-ui;
+    }
+    
+}
+
+
 .login-btn{
     width : 150px;
     height: 30px;
     cursor: pointer;
     background-color: #f48585;
 }
+
+.auth-inputs{
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 290px;
+margin-left:200px;
+.common-input{
+    height: 20px;
+    padding: 10px;
+}
+::placeholder{
+    color: #212121;
+}
+}
+
+
+
+.TaskTango{
+width:170px;
+position: absolute;
+top:20px;
+left:20px;
+}
+
