@@ -51,7 +51,9 @@ margin-left:200px;
 
 }
 .forgot-password {
-    color:rgba(22, 39, 224, 0.708)
+    color: rgba(22, 39, 224, 0.708);
+    text-decoration: underline; /* Underline the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 
