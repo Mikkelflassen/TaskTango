@@ -36,7 +36,9 @@ export default function LoginComponent() {
                 className ='commen-input' 
                 placeholder='Password'
             /> 
-             <p className ="forgot-password"> Forgot Password?</p>
+            <p className="forgot-password">
+  <a href="https://mikkelflassen.com/">Forgot Password?</a>
+</p>
         </div>  
         
         <button onClick={login} className="login-btn"> 
