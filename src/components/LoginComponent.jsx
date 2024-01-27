@@ -20,7 +20,7 @@ export default function LoginComponent() {
         <img src={TaskTango} className='TaskTango'/>
         
         <h1 className="heading"> Sign in</h1>
-        <p className="sub-heading">Stay updated on your professional world</p>
+        <p className="sub-heading">Stay updated on jobs you can do on the side</p>
         <div className ="auth-inputs">     
             <input 
                 onChange ={(event) =>

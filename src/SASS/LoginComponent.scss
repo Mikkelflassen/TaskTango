@@ -1,32 +1,41 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background: linear-gradient(45deg, #379144, #ffffff); /* Gradient background */
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body cover the entire viewport height */
 }
 
-.TaskTango {
-    width: 170px;
-    position: absolute;
-    top: 212px;
-    left: 20px;
-    border-radius: 5px;
-}
+
 
 .login-wrapper {
-    background: linear-gradient(45deg, #379144, #ffffff); /* Gradient background */
+    background: none; /* Remove background from login wrapper */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
     padding: 20px; /* Add padding for better appearance */
-    
+
     .heading {
-        margin-left: 200px;
+        margin-left:100px;
+        margin-right:100px;
+        margin-top: 100px;
         margin-top: 100px;
         font-family: system-ui;
         font-weight: 500;
         color: #212121;
     }
+    .TaskTango {
+        width: 380px;
+        position: absolute;
+        top: 260px;
+        left: 20px;
+        border-radius: 5px;
+    }
 
     .sub-heading {
-        margin-left: 200px;
+        margin-left:100px;
+        margin-right:100px;
         margin-top: -20px;
         font-family: system-ui;
     }
@@ -38,15 +47,16 @@ body {
 display: flex;
 flex-direction: column;
 gap: 10px;
-width: 290px;
-margin-left:200px;
+width: 325px;
+margin-left:100px;
+margin-right:100px;
 .commen-input{
     height: 20px;
     padding: 10px;
     
 }
 ::placeholder{
-    color: #ffffff;
+    color: #040404;
 }
 
 }
@@ -54,7 +64,7 @@ margin-left:200px;
     color: rgba(22, 39, 224, 0.708);
     text-decoration: underline; /* Underline the text */
     cursor: pointer; /* Change cursor to pointer on hover */
-    
+    margin-left: 100px;
 }
 
 
@@ -66,13 +76,14 @@ margin-left:200px;
     border: solid 2px;
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
     position: relative;
-    width: 290px;
+    width: 325px;
     overflow: hidden;
     transition: color 0.3s, border-color 0.3s;
     cursor: pointer;
-    margin-left:200px;
+    margin-left:100px;
+    margin-right:100px;
 }
   
     /* Text styles */
