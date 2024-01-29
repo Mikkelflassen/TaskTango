@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 import { LoginAPI } from "../api/AuthAPI";
-import TaskTango from '../assets/TaskTangoLOGO.png';
+import TaskTango from '../assets/TaskTangoLogo2.png';
 import "../Sass/LoginComponent.scss";
 
 
