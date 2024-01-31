@@ -16,9 +16,12 @@ export default function LoginComponent() {
     };
 
     return ( 
+        <>
+        <p className ="imageContainer">
+        <img src={TaskTango} className='TaskTango'/> 
+        </p>
     <div className = "login-wrapper">
-        <img src={TaskTango} className='TaskTango'/>
-        
+    
         <h1 className="heading"> Sign in</h1>
         <p className="sub-heading">Stay updated on jobs you can do on the side</p>
         <div className ="auth-inputs">     
@@ -45,5 +48,6 @@ export default function LoginComponent() {
          Sign in
         </button>
     </div>
+    </>
  )
 }
