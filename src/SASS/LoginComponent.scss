@@ -38,10 +38,10 @@ body {
 }
 
 .TaskTango {
-    width: 200px; /* Adjust width as needed */
-    position: absolute; /* Set image to absolute positioning */
+    width: 200px; /* Adjust width */
+    position: absolute; 
     top: 0; /* Position at top */
-    right: 0; /* Position at left */
+    right: 0; /* Position at right */
     z-index: 1; /* Ensure the image is above other content */
   }
 
@@ -104,7 +104,7 @@ margin-right:100px;
     bottom: 0; /* position of the line*/
     left: 50%; /* which direction */
     width: 0; /* where the line starts */
-    height: 2px; /* size of */
+    height: 2px; /* size of line */
     background-color: #ffffff; /* color of the line*/
     transition: width 0.5s, left 0.5s; /* time for the line to travel*/
     }
