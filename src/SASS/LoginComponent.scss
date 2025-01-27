@@ -1,118 +1,111 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #379144, #ffffff); /* Gradient background */
-    font-family: system-ui;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Make the body cover the entire viewport height */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    45deg,
+    #379144,
+    #ffffff
+  ); /* Gradient background */
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the body cover the entire viewport height */
 }
-
-
 
 .login-wrapper {
-    background: none; /* Remove background from login wrapper */
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.581); /* Adding a subtle shadow */
-    padding: 20px; /* Add padding for better appearance */
+  background: none; /* Remove background from login wrapper */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.581); /* Adding a subtle shadow */
+  padding: 20px; /* Add padding for better appearance */
 
-    .heading {
-        margin-left:100px;
-        margin-right:100px;
-        margin-top: 100px;
-        font-family: system-ui;
-        font-weight: 500;
-        color: #212121;
-    }
-    
-    .sub-heading {
-        margin-left:100px;
-        margin-right:100px;
-        margin-top: -20px;
-        font-family: system-ui;
-    }
+  .heading {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    font-family: system-ui;
+    font-weight: 500;
+    color: #212121;
+  }
+
+  .sub-heading {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -20px;
+    font-family: system-ui;
+  }
 }
 
-.imageContainer{
-    position: relative;
+.imageContainer {
+  position: relative;
 }
 
 .TaskTango {
-    width: 200px; /* Adjust width */
-    position: absolute; 
-    top: 0; /* Position at top */
-    right: 0; /* Position at right */
-    z-index: 1; /* Ensure the image is above other content */
-  }
+  width: 200px; /* Adjust width */
+  position: absolute;
+  top: 0; /* Position at top */
+  right: 0; /* Position at right */
+  z-index: 1; /* Ensure the image is above other content */
+}
 
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 325px;
+  margin-left: 100px;
+  margin-right: 100px;
 
-.auth-inputs{
-display: flex;
-flex-direction: column;
-gap: 10px;
-width: 325px;
-margin-left:100px;
-margin-right:100px;
-
-.commen-input{
+  .commen-input {
     height: 20px;
     padding: 10px;
     background-color: #ffffff;
-    
-}
-::placeholder{
+  }
+  ::placeholder {
     color: #040404;
-}
+  }
 }
 
 .forgot-password a {
-    color: #000000;
-    cursor: pointer; /* Change cursor to pointer on hover */
-    margin-left: 100px;
+  color: #000000;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-left: 100px;
 }
 
-
-
-.login-btn{
-    
-    background-color: #379144; 
-    color: #ffffff;
-    border: solid 2px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 20px;
-    position: relative;
-    width: 325px;
-    overflow: hidden;
-    transition: color 0.3s, border-color 0.3s;
-    cursor: pointer;
-    margin-left:100px;
-    margin-right:100px;
+.login-btn {
+  background-color: #379144;
+  color: #ffffff;
+  border: solid 2px;
+  padding: 10px 19px;
+  border-radius: 20px;
+  font-size: 20px;
+  position: relative;
+  width: 325px;
+  overflow: hidden;
+  transition: color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-  
-    /* Text styles */
-    span {
-    position: relative;
-    z-index: 1;
-    }
-  
-     /* Line effect */
-    .login-btn:before {
-    content: '';
-    position: absolute;
-    bottom: 0; /* position of the line*/
-    left: 50%; /* which direction */
-    width: 0; /* where the line starts */
-    height: 2px; /* size of line */
-    background-color: #ffffff; /* color of the line*/
-    transition: width 0.5s, left 0.5s; /* time for the line to travel*/
-    }
-  
-   
-  
-    .login-btn:hover::before {
-    width: 100%; /* Extend line width on hover */
-    left: 0; /* Align line from the left */
-    }
 
+/* Text styles */
+span {
+  position: relative;
+  z-index: 1;
+}
 
+/* Line effect */
+.login-btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0; /* position of the line*/
+  left: 50%; /* which direction */
+  width: 0; /* where the line starts */
+  height: 2px; /* size of line */
+  background-color: #ffffff; /* color of the line*/
+  transition: width 0.5s, left 0.5s; /* time for the line to travel*/
+}
+
+.login-btn:hover::before {
+  width: 100%; /* Extend line width on hover */
+  left: 0; /* Align line from the left */
+}
